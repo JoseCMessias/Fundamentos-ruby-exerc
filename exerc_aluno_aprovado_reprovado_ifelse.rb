@@ -11,22 +11,26 @@ alunos = [
  verificacao_1 = alunos[1][:nota]
  verificacao_2 = alunos[2][:nota]
 
-
-if verificacao_0 >= NOTA_MINIMA
-    puts "#{alunos[0][:nome]} foi aprovado(a) na disciplina de #{alunos[0][:disciplina]}"
-else 
-    puts "#{alunos[0][:nome]} foi reprovado(a) na disciplina de #{alunos[0][:disciplina]}"
+for aluno in alunos do
+    puts "#{aluno[:nome]} - #{aluno[:nota]} - #{aluno[:disciplina]}"
 end
 
-if verificacao_1 >= NOTA_MINIMA
-    puts "#{alunos[1][:nome]} foi aprovado(a) na disciplina de #{alunos[1][:disciplina]}"
-else 
-    puts "#{alunos[1][:nome]} foi reprovado(a) na disciplina de #{alunos[1][:disciplina]}"
-end
 
-if verificacao_2 >= NOTA_MINIMA
-    puts "#{alunos[2][:nome]} foi aprovado(a) na disciplina de #{alunos[2][:disciplina]}"
-else 
-    puts "#{alunos[2][:nome]} foi reprovado(a) na disciplina de #{alunos[2][:disciplina]}"
-end
-puts
+# if verificacao_0 >= NOTA_MINIMA
+#     puts "#{alunos[0][:nome]} foi aprovado(a) na disciplina de #{alunos[0][:disciplina]}"
+# else 
+#     puts "#{alunos[0][:nome]} foi reprovado(a) na disciplina de #{alunos[0][:disciplina]}"
+# end
+
+# if verificacao_1 >= NOTA_MINIMA
+#     puts "#{alunos[1][:nome]} foi aprovado(a) na disciplina de #{alunos[1][:disciplina]}"
+# else 
+#     puts "#{alunos[1][:nome]} foi reprovado(a) na disciplina de #{alunos[1][:disciplina]}"
+# end
+
+# if verificacao_2 >= NOTA_MINIMA
+#     puts "#{alunos[2][:nome]} foi aprovado(a) na disciplina de #{alunos[2][:disciplina]}"
+# else 
+#     puts "#{alunos[2][:nome]} foi reprovado(a) na disciplina de #{alunos[2][:disciplina]}"
+# end
+# puts

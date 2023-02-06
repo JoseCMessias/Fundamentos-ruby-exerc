@@ -11,17 +11,12 @@ alunos = [
  verificacao_nota_1 = alunos[1][:nota]
  verificacao_nota_2 = alunos[2][:nota]
 
-print "Aluno 1: "
-case (verificacao_nota_0)
-when verificacao_nota_0 < 0 || verificacao_nota_0 > 10
-    puts "nota invalida"
-else 
+
     if verificacao_nota_0 >= NOTA_MINIMA
         puts "#{alunos[0][:nome]} foi aprovado(a) na disciplina de #{alunos[0][:disciplina]}"
     else 
         puts "#{alunos[0][:nome]} foi reprovado(a) na disciplina de #{alunos[0][:disciplina]}"
     end
-end
 
 print "Aluno 2: "
 case (verificacao_nota_1)
